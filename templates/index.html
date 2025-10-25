@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+
+{% block title %}Home - Dashboard Pemantauan{% endblock %}
+
+{% block head_scripts %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='style_home.css') }}">
+{% endblock %}
+
+{% block content %}
+
+<div class="content">
+  <div class="card-item">
+    <div class="media-container">
+      <img src="{{ url_for('static', filename='images/Gunung_Bromo.jpg') }}" alt="Media" class="media">
+    </div>
+    <div class="text-container">
+      <h2>Gunung Bromo</h2>
+      <p>Gunung Bromo merupakan salah satu ikon wisata alam paling terkenal di Jawa Timur, 
+        terletak di kawasan Taman Nasional Bromo Tengger Semeru. Gunung ini memiliki ketinggian sekitar 2.329 meter 
+        di atas permukaan laut dan dikenal dengan kaldera luas serta lautan pasirnya yang menakjubkan. 
+        Aktivitas vulkaniknya masih tergolong aktif, menjadikannya destinasi menarik bagi wisatawan yang ingin menyaksikan 
+        keindahan sunrise dari Penanjakan dan pesona alam khas gunung berapi di Malang Raya.</p>
+    </div>
+  </div>
+  <div class="card-item">
+    <div class="media-container">
+      <img src="{{ url_for('static', filename='images/Gunung_Arjuno.jpg') }}" alt="Media" class="media">
+    </div>
+    <div class="text-container">
+      <h2>Gunung Arjuno</h2>
+      <p>Gunung Arjuno, dengan ketinggian sekitar 3.339 meter, merupakan gunung tertinggi kedua di Jawa
+        Timur setelah Semeru. Terletak di perbatasan Kota Batu, Malang, dan Pasuruan, gunung ini menawarkan jalur
+        pendakian yang menantang serta panorama hutan tropis yang lebat. Nama “Arjuno” diambil dari tokoh
+        pewayangan Mahabharata, melambangkan keteguhan dan kesatria, sesuai dengan karakter gunung ini yang megah dan sakral bagi masyarakat sekitar.
+      </p>
+    </div>
+  </div>
+  <div class="card-item">
+    <div class="media-container">
+      <img src="{{ url_for('static', filename='images/Gunung_Welirang.jpg') }}" alt="Media" class="media">
+    </div>
+    <div class="text-container">
+      <h2>Gunung Welirang</h2>
+      <p>Gunung Welirang berdampingan langsung dengan Gunung Arjuno dan dikenal sebagai gunung
+        belerang aktif dengan aktivitas penambangan tradisional di puncaknya. Memiliki ketinggian sekitar 3.156
+        meter, gunung ini menampilkan lanskap pegunungan yang menawan dan jalur pendakian yang kerap dipilih
+        oleh pendaki yang ingin menjelajahi dua puncak sekaligus — Arjuno dan Welirang. Keindahan alamnya
+        berpadu dengan aroma khas belerang, menjadikannya salah satu gunung paling unik di kawasan Malang, Jawa Timur.
+      </p>
+    </div>
+  </div>
+</div>
+<div class="content2">
+  <h2>Pengenalan Gunung Api</h2>
+  <p>
+    Indonesia memiliki banyak gunung api aktif yang tersebar di berbagai pulau.
+    Setiap gunung memiliki karakteristik dan keunikan tersendiri baik dari sisi
+    geologi, sejarah erupsi, maupun potensi wisata alam.
+  </p>
+</div>
+
+  <div class="content2">
+    <div class="subcontent">
+        <h2>Pemanfaatan Geotermal Gunung Arjuno-Welirang</h2>
+        <p>
+          Potensi geotermal di kawasan Gunung Arjuno–Welirang dimanfaatkan sebagai sumber energi panas bumi yang berkelanjutan 
+          untuk mendukung kebutuhan listrik dan penelitian energi terbarukan di Jawa Timur. Aktivitas vulkanik di gunung ini 
+          menghasilkan manifestasi panas bumi seperti fumarol, mata air panas, dan endapan belerang yang menunjukkan adanya 
+          reservoir panas di bawah permukaan. Pemanfaatan geotermal di wilayah ini tidak hanya berperan dalam diversifikasi 
+          sumber energi nasional, tetapi juga membuka peluang bagi pengembangan teknologi ramah lingkungan serta kegiatan edukasi 
+          dan wisata ilmiah terkait energi hijau di sekitar Malang dan Pasuruan.
+        </p>
+    </div>
+    <div class="video_content">
+        <iframe src="https://drive.google.com/file/d/1OpelQdxtT5Z8bCmGIOkNBtS5kF8u0xIw/preview" allow="autoplay"></iframe>
+    </div>
+  </div>
+{% endblock %}

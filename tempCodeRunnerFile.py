@@ -1,0 +1,1 @@
+return render_template("monitoring.html", sensor_data=data, waeather_data = weather_data)

@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}3D Model Gunung Arjuna{% endblock %}
+
+{% block head_scripts %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='style_3dmodel.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="content">
+    <div class="text-content">
+        <h2>3D Model dari Gunung Arjuna - Welirang</h2>
+    </div>
+    <div class="model_gunung" id="canvas-container"
+    data-model-url="{{ url_for('static', filename='/models/Arjuno-Welirang_2.glb') }}"></div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+
+    <script type="importmap">
+        {
+        "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@latest/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@latest/examples/jsm/"
+        }
+    }
+    </script>
+    <script type="module" src="{{ url_for('static', filename='js/3dModel.js') }}"></script>
+
+{% endblock %}
